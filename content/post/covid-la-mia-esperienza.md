@@ -1,7 +1,6 @@
 ---
 title: "Covid: La Nostra Esperienza"
 date: 2021-05-04T08:12:11+02:00
-draft: true
 ---
 
 Una delle cose che più ho imparato dalla mia **esperienza COVID** è che essere pronti è importante affinché la malattia non prenda piede.

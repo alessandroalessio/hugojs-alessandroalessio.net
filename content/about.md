@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2021-05-05T14:13:04+02:00
-draft: true
 menu: "main"
 type: about
 thumb: "/img/alessandro-alessio.webp"

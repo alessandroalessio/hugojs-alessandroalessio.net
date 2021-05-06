@@ -1,7 +1,6 @@
 ---
 title: "Quote"
 date: 2021-05-05T23:23:01+02:00
-draft: true
 menu: "main"
 type: quote
 ---

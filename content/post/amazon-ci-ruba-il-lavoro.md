@@ -1,7 +1,6 @@
 ---
 title: "Amazon ci ruba il lavoro"
 date: 2021-05-06T08:12:01+02:00
-draft: true
 thumb: "https://res.cloudinary.com/alessandro-alesiso-net/image/upload/q_51/v1620322086/alessandro-alessio-net/amazon-ci-ruba-il-lavoro/amazon-ci-ruba-il-lavoro_wzlzk1.webp"
 thumbdida: "Credits https://unsplash.com/photos/jxhM5Ni46zw"
 ---
