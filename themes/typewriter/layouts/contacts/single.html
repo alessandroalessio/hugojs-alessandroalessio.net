@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="container mt5 mb5">
+    <div class="row">
+        <div class="col-xs">
+            <h1 id="title">{{ .Title }}</h1>
+            <article id="content">
+            {{ .Content }}
+            </article>            
+        </div>
+    </div>
+    <div class="row mt4">
+        {{ range .Site.Data.contacts }}
+            <div class="col-xs text-center">
+                <a href="{{ .url }}" title="{{ .label }}" target="_blank" class="contact-icon">
+                    <img src="{{ .icon }}" alt="{{ .label }}" width="32" height="32" class="ml-auto mr-auto">
+                    <span>{{ .label }}</span>
+                </a>
+            </div>
+        {{end}}
+    </div>
+</div>
+{{ end }}

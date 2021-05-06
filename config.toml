@@ -1,0 +1,11 @@
+baseURL = "http://www.alessandroalessio.net/"
+languageCode = "it-it"
+title = "Alessandro Alessio"
+theme = "typewriter"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/post/"

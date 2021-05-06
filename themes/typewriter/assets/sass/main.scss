@@ -1,0 +1,90 @@
+@import 'partials/base.scss';
+@import 'partials/helpers.scss';
+@import 'partials/header.scss';
+@import 'partials/footer.scss';
+
+.thumb-single-article{
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dida-single-article{
+    font-size: 0.8em;
+    text-align: center;
+    opacity: 0.5;
+}
+.single-article{
+    text-align: left;
+    p{
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+        text-align: justify;
+    }
+    h2,h3,h4,h5{
+        margin-top: 2em;
+        &:before{
+            content: '--';
+            letter-spacing: -5px;
+            margin-right: 1em;
+        }
+    }
+}
+
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    /* width: 24px; */
+    box-shadow: 0 10px 10px 5px rgba(100, 100, 100, 0.1);
+    padding: 0.5em;
+    border-radius: 2em;
+}
+
+
+
+.item-home-submenu{
+    padding: 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.item-home-submenu a:before{
+    content: '|';
+    display: block;
+    text-align: center;
+}
+
+
+#FullsizeMenu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+#FullsizeMenu ul > li{
+    display: block;
+}
+#FullsizeMenu ul > li > a{
+    font-family: 'Jost';
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#FullsizeControl {
+    display: none;
+}
+#FullsizeControl:checked + #FullsizeMenu{
+    z-index: 999;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) { 
+	.container{
+        margin: 0 0.5em;
+    }
+}

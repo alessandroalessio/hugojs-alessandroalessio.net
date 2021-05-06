@@ -1,0 +1,37 @@
+// Text
+.font-size4{
+    font-size: 4em;
+}
+.title{
+    font-family: 'Jost', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+// Ul e Listing
+.list-horbar li:before{
+    content: ' —— ';
+    margin-right: 0.25em;
+}
+
+// Align
+.vertical-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Margin e Padding extra
+.mt5{ margin-top: 5em; }
+.mb5{ margin-bottom: 5em; }
+.pt5{ padding-top: 5em; }
+.pb5{ padding-bottom: 5em; }
+
+// Cursor
+.pointer{
+    cursor:pointer;
+}

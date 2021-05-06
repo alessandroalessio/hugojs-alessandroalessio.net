@@ -1,0 +1,36 @@
+<input type="checkbox" id="FullsizeControl"/>
+<div id="FullsizeMenu">
+    <div class="container mt3">
+        <div class="row end-xs">
+            <div class="col-xs-1"><label for="FullsizeControl" class="pointer"><img src="/img/close.svg" alt="Close Menu" width="24"></label></div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs-4 mt4">
+                <ul class="list-reset">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        <li class="mt1" class="item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="mb4 pt2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 vertical-center">
+                <label for="FullsizeControl" class="pointer"><img src="/img/menu.svg" alt="menu" width="24"></label>
+            </div>
+            <div class="col-xs-4 vertical-center text-center">
+                <a href="/" title="{{ .Title }}" class="logo-wrapper">
+                    <span id="logo" class="h1 title mt3 mb3">A<sup>2</sup></span>
+                </a>
+            </div>
+            <div class="col-xs-4 vertical-center">
+                <div class="wrapper text-right">
+                    <a href="/affiliazioni/" title="Affiliazioni" class="btn"><img src="/img/hearth.svg" alt="menu" width="24"></a></div>
+                </div>
+        </div>
+    </div>
+</header>

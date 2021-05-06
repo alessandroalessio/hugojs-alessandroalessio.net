@@ -1,0 +1,27 @@
+.item-quote{
+    margin-bottom: 2em;
+    .inner{
+        padding: 1em;
+        background: #efefef;
+        small{
+            &:before,
+            &:after{
+                content: '”';
+            }
+        }
+        h4{
+            margin: 0;
+            padding: 0;
+
+            &:before{
+                content: ' ';
+                display: block;
+                height: 10px;
+                width: 50%;
+                margin-left: 50%;
+                margin-top: 10px;
+                border-left: 1px solid #5755D9;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2.25em;
+    color: #393e46;
+}
+a{
+    color: #5755D9;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+sup{
+    font-size: 0.4em;
+    color: #393e46;
+}
+label{
+    display: inline-block;
+}
+a.logo-wrapper{
+    text-decoration: none;
+}
+.font-size4{
+    font-size: 4em;
+}
+.title{
+    font-family: 'Jost', sans-serif;
+}
+.bordered{
+    border: 1px solid #cfcfcf;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.list-horbar li:before{
+    content: ' —— ';
+    margin-right: 0.25em;
+}
+footer a{
+    text-decoration: none;
+}
+footer small{
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+.vertical-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    /* width: 24px; */
+    box-shadow: 0 10px 10px 5px rgba(100, 100, 100, 0.1);
+    padding: 0.5em;
+    border-radius: 2em;
+}
+.pointer{
+    cursor:pointer;
+}
+
+#logo{
+    font-weight: 800;
+}
+
+.mt5{ margin-top: 5em; }
+.mb5{ margin-bottom: 5em; }
+.pt5{ padding-top: 5em; }
+.pb5{ padding-bottom: 5em; }
+
+.item-home-submenu{
+    padding: 3em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.item-home-submenu a:before{
+    content: '|';
+    display: block;
+    text-align: center;
+}
+
+
+#FullsizeMenu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+#FullsizeMenu ul > li{
+    display: block;
+}
+#FullsizeMenu ul > li > a{
+    font-family: 'Jost';
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#FullsizeControl {
+    display: none;
+}
+#FullsizeControl:checked + #FullsizeMenu{
+    z-index: 999;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) { 
+	.container{
+        margin: 0 0.5em;
+    }
+}

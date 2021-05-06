@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2.25em;
+    color: #393e46;
+}
+a{
+    color: #5755D9;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+sup{
+    font-size: 0.4em;
+    color: #393e46;
+}
+label{
+    display: inline-block;
+}
+hr{
+    border:0;
+    border-top:1px solid #ccc;
+    margin:3em 20%;
+    height:1px;
+}
+small{
+    font-size: 0.8em;
+    line-height: 1.4em;
+    display: inline-block;
+}

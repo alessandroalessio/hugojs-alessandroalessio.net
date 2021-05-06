@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container mt5 mb5">
+  <div class="row center-xs">
+      <div class="col-xs-8">
+          <section class="content-wrapper">
+            {{ .Content }}
+
+            {{ range .Paginator.Pages }}
+              {{ .Render "summary" }}
+            {{ end }}
+          </section>
+          
+          <section class="pagination">
+            {{ template "_internal/pagination.html" . }}
+          </section>
+      </div>
+  </div>
+</div>
+{{ end }}

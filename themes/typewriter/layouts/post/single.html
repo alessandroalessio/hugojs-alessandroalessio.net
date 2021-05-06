@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container mb5">
+    {{ if isset .Params "thumb" }}
+        <div class="row">
+            <div class="col-xs-12 thumb-single-article" style="background-image: url({{.Params.thumb}})"></div>
+            <div class="col-xs-12 dida-single-article">{{.Params.thumbdida}}</div>
+        </div>
+    {{ end }}
+    <div class="row center-xs">
+        <div class="col-sm-8">
+            <h1 id="title" class="text-center mt4 mb3">{{ .Title }}</h1>
+            <article id="content" class="single-article">
+            {{ .Content }}
+            </article>
+        </div>
+    </div>
+</div>
+{{ end }}

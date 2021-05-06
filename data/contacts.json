@@ -1,0 +1,22 @@
+{
+    "twitter": {
+        "label": "Twitter",
+        "icon": "/img/twitter.svg",
+        "url": "https://twitter.com/AAlessio86"
+    },
+    "linkedin": {
+        "label": "Linkedin",
+        "icon": "/img/linkedin.svg",
+        "url": "https://www.linkedin.com/in/alessandro-alessio-a1418874/"
+    },
+    "instagram": {
+        "label": "Instagram",
+        "icon": "/img/instagram.svg",
+        "url": "https://www.instagram.com/lxn/"
+    },
+    "telegram": {
+        "label": "Telegram",
+        "icon": "/img/telegram.svg",
+        "url": "https://t.me/AlessandroAlessioNET"
+    }
+}

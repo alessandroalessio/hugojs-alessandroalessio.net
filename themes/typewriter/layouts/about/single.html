@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container mt5 mb5">
+    <div class="row">
+        <div class="col-xs">
+            <h1 id="title">{{ .Title }}</h1>
+            <div style="float:right"><img src="{{ .Params.thumb }}" alt="Alessandro Alessio" width="250"></div>
+            <article id="content">
+            {{ .Content }}
+            </article>
+        </div>
+    </div>
+</div>
+{{ end }}
