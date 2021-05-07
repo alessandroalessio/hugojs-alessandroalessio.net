@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<html prefix="og: http://ogp.me/ns#" lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
@@ -7,5 +7,6 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+        {{- block "extra-footer" . }}{{- end }}
     </body>
 </html>

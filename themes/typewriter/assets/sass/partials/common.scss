@@ -1,0 +1,19 @@
+.pagination{
+    font-family: 'Jost', sans-serif;
+    ul{
+       li{ 
+           display: inline-block;
+           a{
+               text-decoration: none;
+               padding: 0 0.5em;
+               color: #444;
+           }
+           &.active{
+               border-bottom: 2px solid #5755D9;
+           }
+           &.disabled{
+               display: none;
+           }
+       }
+    }
+}

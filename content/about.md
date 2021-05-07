@@ -4,6 +4,7 @@ date: 2021-05-05T14:13:04+02:00
 menu: "main"
 type: about
 thumb: "/img/alessandro-alessio.webp"
+description: "Alessandro Alessio Curriculum Vitae Digitale: competenze tecniche, esperienze lavorative, scolastiche, corsi e attestati"
 ---
 
 Piacere, Alessandro!

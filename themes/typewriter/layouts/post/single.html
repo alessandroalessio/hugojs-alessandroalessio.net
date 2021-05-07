@@ -1,18 +1,28 @@
 {{ define "main" }}
-<div class="container mb5">
+<div class="container mb5 post-single">
     {{ if isset .Params "thumb" }}
-        <div class="row">
+        <div class="row image-wrapper">
             <div class="col-xs-12 thumb-single-article" style="background-image: url({{.Params.thumb}})"></div>
             <div class="col-xs-12 dida-single-article">{{.Params.thumbdida}}</div>
         </div>
     {{ end }}
     <div class="row center-xs">
         <div class="col-sm-8">
-            <h1 id="title" class="text-center mt4 mb3">{{ .Title }}</h1>
-            <article id="content" class="single-article">
+            <div class="back-wrapper"><a href="/post" title="Blog">&larr; Tutti gli articoli</a></div>
+            <h1 id="title" class="title text-center">{{ .Title }}</h1>
+            {{ if .Date }}
+                <div class="date">
+                    {{ .Date.Format "02/02/2006" }}
+                </div>
+            {{ end }}
+            <article id="content" class="post-content mt4">
             {{ .Content }}
             </article>
         </div>
     </div>
 </div>
+{{ end }}
+{{ define "extra-footer" }}
+    {{ $style := resources.Get "sass/post/single.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 {{ end }}

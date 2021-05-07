@@ -1,37 +1,8 @@
 @import 'partials/base.scss';
 @import 'partials/helpers.scss';
+@import 'partials/common.scss';
 @import 'partials/header.scss';
 @import 'partials/footer.scss';
-
-.thumb-single-article{
-    min-height: 350px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.dida-single-article{
-    font-size: 0.8em;
-    text-align: center;
-    opacity: 0.5;
-}
-.single-article{
-    text-align: left;
-    p{
-        font-size: 1em;
-        line-height: 1.5em;
-        margin-bottom: 1.5em;
-        text-align: justify;
-    }
-    h2,h3,h4,h5{
-        margin-top: 2em;
-        &:before{
-            content: '--';
-            letter-spacing: -5px;
-            margin-right: 1em;
-        }
-    }
-}
-
 
 .btn{
     display: inline-block;

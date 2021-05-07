@@ -17,3 +17,7 @@
   </div>
 </div>
 {{ end }}
+{{ define "extra-footer" }}
+  {{ $style := resources.Get "sass/post/list.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+{{ end }}

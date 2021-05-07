@@ -1,7 +1,22 @@
 baseURL = "http://www.alessandroalessio.net/"
-languageCode = "it-it"
 title = "Alessandro Alessio"
 theme = "typewriter"
+
+languageCode = "it-it"
+DefaultContentLanguage = "en"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  author = "Alessandro Alessio"
+  github = "https://github.com/alessandroalessio"
+  facebook = "https://www.facebook.com/a.alessio86"
+  og_image = "/images/og.png"
+  sitename = "Alessandro Alessio"
+  twitter = "@AAlessio86"
 
 [menu]
 
