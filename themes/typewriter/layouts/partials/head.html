@@ -8,6 +8,7 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Description }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <meta name="theme-color" content="#5755D9">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}

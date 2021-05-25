@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="container mt5 mb5">
+  <div class="row">
+    <div class="col-xs-12">
+      <section class="content-wrapper">
+        <p>Da almeno 5 anni seguo regolarmente l’universo podcast. Ho iniziato con Easy Apple per poi aggiungere Digitalia fino ad avere oggi una playlist composta da una trentina di podcast, più o meno tutti attivi.</p>
+        <p></p>Ho pensato così che il mio “condividere” sarebbe stato più efficace e più assimilabile, oltre che più mainstream, con un podcast. E cosa se non dei consigli per freelance che possano imparare dai miei errori? Ho deciso così di iniziare questa avventura chiamata I consigli di un pirla – pillole per freelance dove periodicamente esporrò problemi comuni del mondo Freelance e dove mi permetto di dare qualche consiglio per sopravvivere in questa giungla.</p>
+      </section>
+    </div>
+  </div>
+  <div class="row center-xs">
+      <div class="col-xs-8">
+          <section class="content-wrapper">
+
+            {{ .Content }}
+
+            {{ range .Paginator.Pages }}
+              {{ .Render "summary" }}
+            {{ end }}
+          </section>
+          
+          <section class="pagination">
+            {{ template "_internal/pagination.html" . }}
+          </section>
+      </div>
+  </div>
+</div>
+{{ end }}
+{{ define "extra-footer" }}
+  {{ $style := resources.Get "sass/post/list.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+{{ end }}

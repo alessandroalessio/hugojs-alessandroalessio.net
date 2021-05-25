@@ -1,4 +1,5 @@
-baseURL = "https://compassionate-yalow-e93930.netlify.app//"
+# baseURL = "https://compassionate-yalow-e93930.netlify.app/"
+baseURL = "http://www.alessandroalessio.net/"
 title = "Alessandro Alessio"
 theme = "typewriter"
 

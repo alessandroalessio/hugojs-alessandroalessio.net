@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
-    <body>
+    <body data-barba="wrapper">
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div id="content" data-barba="container">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
