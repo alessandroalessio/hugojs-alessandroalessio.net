@@ -18,6 +18,7 @@ canonifyURLs = true
   og_image = "/images/og.png"
   sitename = "Alessandro Alessio"
   twitter = "@AAlessio86"
+  telegram = "https://t.me/alessandro_alessio"
 
 [menu]
 
@@ -25,3 +26,8 @@ canonifyURLs = true
     identifier = "blog"
     name = "Blog"
     url = "/post/"
+
+  [[menu.main]]
+    identifier = "podcast"
+    name = "Podcast"
+    url = "/podcast/"
