@@ -1,0 +1,68 @@
+.post-single{
+    .image-wrapper{
+        margin-bottom: 2em;
+        .thumb-single-article{
+            min-height: 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .dida-single-article{
+            font-size: 0.8em;
+            text-align: center;
+            opacity: 0.5;
+        }
+    }
+    .back-wrapper{
+        a{
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+    }
+    .date{
+        opacity: 0.5;
+    }
+    .title{
+        padding: 0;
+        margin: 0;
+    }
+    .post-content{
+        text-align: left;
+        p{
+            font-size: 1em;
+            line-height: 1.5em;
+            margin-bottom: 1.5em;
+            text-align: justify;
+        }
+        h2,h3,h4,h5{
+            margin-top: 2em;
+            &:before{
+                content: '--';
+                letter-spacing: -5px;
+                margin-right: 1em;
+            }
+        }
+        .listen-on{
+            background: #fafafa;
+            padding: 1em 2em;
+
+            ul{
+                list-style: none;
+                li{
+                    line-height: 1.5em;
+                }
+                li:before{
+                    content: '→';
+                    margin-right: 1em;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .podcast-credits{
+            font-style: italic;
+        }
+    }
+    
+}

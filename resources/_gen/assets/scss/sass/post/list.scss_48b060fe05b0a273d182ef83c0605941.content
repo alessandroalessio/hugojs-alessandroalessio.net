@@ -1,1 +1,1 @@
-.post-item{margin-bottom:3em}.post-item .date{opacity:.5;font-size:.9em}.post-item .title{margin:0;padding:0}.post-item .title a{text-decoration:none}.post-item .content{margin-top:1em}.post-item:after{content:"/"}
+@charset "UTF-8";.post-item{margin-bottom:3em}.post-item .date{opacity:.5;font-size:.9em}.post-item .title{margin:0;padding:0}.post-item .title a{text-decoration:none}.post-item .content{margin-top:1em}.post-item:after{content:"∗";color:#5755d9}

@@ -1,0 +1,42 @@
+.contact-icon{
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: #393e46;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+}
+.contacts-form{
+    border: 8px dashed #f0f0f0;
+    padding: 1em 2em;
+    h3{
+        margin: 0;
+    }
+    label{
+        font-size: 0.6em;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        display: block;
+        width: 100%;
+    }
+    input[type=email],
+    input[type=text],
+    textarea{
+        display: block;
+        width: 98%;
+        background: #f0f0f0;
+        border: none;
+        padding: 1em;
+        color: lighten(#393e46, 20%);
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .one-half{width:48%;margin-right:4%;float:left}
+    .one-third{width:30%;margin-right:calc(10%/2);float:left}
+    .one-fourth{width:24%;margin-right:calc(4%/3);float:left}
+    .last{margin-right:0}
+}

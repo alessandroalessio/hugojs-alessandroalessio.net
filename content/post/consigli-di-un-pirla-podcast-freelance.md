@@ -112,4 +112,4 @@ Se vuoi puoi ascoltare la prima puntata direttamente da qui: [Scegliere il comme
 
  [1]: https://castbox.fm/channel/I-Consigli-di-un-Pirla---Pillole-per-Freelance-id3274234?country=it
  [2]: https://podcasts.apple.com/it/podcast/i-consigli-di-un-pirla/id1529085612
- [3]: https://www.alessandroalessio.net/podcast/i-consigli-di-un-pirla-podcast-ep-1-scegliere-il-commercialista/
+ [3]: /podcast/i-consigli-di-un-pirla-podcast-ep-1-scegliere-il-commercialista/

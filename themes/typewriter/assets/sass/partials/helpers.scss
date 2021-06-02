@@ -13,9 +13,19 @@
 }
 
 // Ul e Listing
-.list-horbar li:before{
-    content: ' —— ';
-    margin-right: 0.25em;
+.list-horbar {
+    li:before{
+        content: ' —— ';
+        margin-right: .5em;
+        letter-spacing: -0.15em;
+    }
+    a{
+        text-decoration: none;
+        &:hover,
+        &:active{
+            text-decoration: underline;
+        }
+    }
 }
 
 // Align

@@ -19,6 +19,11 @@ canonifyURLs = true
   sitename = "Alessandro Alessio"
   twitter = "@AAlessio86"
   telegram = "https://t.me/alessandro_alessio"
+  email = "info@alessandroalessio.net"
+  podcastspotifyurl = ""
+  podcastitunesurl = "https://podcasts.apple.com/it/podcast/i-consigli-di-un-pirla/id1529085612"
+  podcastspreakerurl = "https://www.spreaker.com/show/i-consigli-di-un-pirla"
+  podcastcastboxurl = ""
 
 [menu]
 

@@ -11,12 +11,18 @@
     <div class="row middle-xs">
         {{ range .Site.Data.quote.list }}
             <div class="col-sm-3 item-quote text-center">
-                <div class="col-xs inner">
-                    <small>{{ .content }}</small>
-                    <h4>{{ .author }}</h4>
+                <div class="col-xs">
+                    <div class="inner">
+                        <small>{{ .content }}</small>
+                        <h4>{{ .author }}</h4>
+                    </div>
                 </div>
             </div>    
         {{end}}
     </div>
 </div>
+{{ end }}
+{{ define "extra-footer" }}
+    {{ $style := resources.Get "sass/quote.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 {{ end }}

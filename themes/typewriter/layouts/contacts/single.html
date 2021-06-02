@@ -9,14 +9,45 @@
         </div>
     </div>
     <div class="row mt4">
-        {{ range .Site.Data.contacts }}
-            <div class="col-xs text-center">
-                <a href="{{ .url }}" title="{{ .label }}" target="_blank" class="contact-icon">
-                    <img src="{{ .icon }}" alt="{{ .label }}" width="32" height="32" class="ml-auto mr-auto">
-                    <span>{{ .label }}</span>
-                </a>
+        <div class="col-md-6">
+            <div class="contacts-form">
+                <h3>Scrivimi</h3>
+                <form action="https://formspree.io/f/mvodavar" method="POST">
+                    <label>
+                        La tua Email:
+                        <input type="email" name="_replyto">
+                    </label>
+                    <label>
+                        Il tuo Messaggio:
+                        <textarea name="message" rows="4"></textarea>
+                    </label>
+                    <label class="one-half pt2">
+                        <input type="checkbox" name="privacy" value="1"> <small>Accetto la privacy policy</small>
+                    </label>
+                    <label class="one-half pt2 last text-right">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                    </label>
+                    <div class="clearfix"></div>
+                </form>
             </div>
-        {{end}}
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">Seguimi o scrivimi sui Social</h3>
+            <div class="row">
+                {{ range .Site.Data.contacts }}
+                    <div class="col-xs-6 text-center">
+                        <a href="{{ .url }}" title="{{ .label }}" target="_blank" class="contact-icon">
+                            <img src="{{ .icon }}" alt="{{ .label }}" width="32" height="32" class="ml-auto mr-auto">
+                            <span>{{ .label }}</span>
+                        </a>
+                    </div>
+                {{end}}
+            </div>
+        </div>
     </div>
 </div>
+{{ end }}
+{{ define "extra-footer" }}
+    {{ $style := resources.Get "sass/contacts.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 {{ end }}

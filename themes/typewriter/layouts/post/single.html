@@ -1,8 +1,16 @@
 {{ define "main" }}
 <div class="container mb5 post-single">
-    {{ if isset .Params "thumb" }}
+    {{ if or (isset .Params "thumb") (isset .Params "featured_image") }}
         <div class="row image-wrapper">
-            <div class="col-xs-12 thumb-single-article" style="background-image: url({{.Params.thumb}})"></div>
+            <div class="col-xs-12 thumb-single-article" 
+                {{ if (isset .Params "thumb") }}
+                    style="background-image: url({{.Params.thumb}})"
+                {{ end }}
+                {{ if (isset .Params "featured_image") }}
+                    style="background-image: url({{.Params.featured_image}})"
+                {{ end }}
+                >
+            </div>
             <div class="col-xs-12 dida-single-article">{{.Params.thumbdida}}</div>
         </div>
     {{ end }}

@@ -19,19 +19,36 @@
             <article id="content" class="post-content mt4">
                 {{ .Content }}
 
-                
-                {{ if and (isset .Params "itunes") }}
-                    <p>Ascolta su iTunes: <a href="{{.Params.itunes}}" title="Ascolta su iTunes">{{.Params.itunes}}</a></p>
+                {{ if or (gt (len $.Site.Params.podcastitunesurl) 0)
+                        (gt (len $.Site.Params.podcastspotifyurl) 0)
+                        (gt (len $.Site.Params.podcastcastboxurl) 0)
+                        (gt (len $.Site.Params.podcastspreakerurl) 0) }}
+                    <div class="listen-on">
+                        <ul>
+                            {{ if isset $.Site.Params "podcastitunesurl" }}
+                                <li><a href="{{ $.Site.Params.podcastitunesurl }}" title="Ascolta su iTunes">Ascolta su iTunes</a></li>
+                            {{ end }}
+                            {{ if isset $.Site.Params "podcastspotifyurl" }}
+                                <li><a href="{{ $.Site.Params.podcastspotifyurl }}" title="Ascolta su Spotify">Ascolta su Spotify</a></li>
+                            {{ end }}
+                            {{ if isset $.Site.Params "podcastspreakerurl" }}
+                                <li><a href="{{ $.Site.Params.podcastspreakerurl }}" title="Ascolta su Spreaker">Ascolta su Spreaker</a></li>
+                            {{ end }}
+                            {{ if isset $.Site.Params "podcastcastboxurl" }}
+                                <li><a href="{{ $.Site.Params.podcastcastboxurl }}" title="Ascolta su Castbox">Ascolta su Castbox</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
                 {{ end }}
 
-                
-Ascolta su Spotify: https://open.spotify.com/show/0iriaAAtDqeFcyqss2ddDz
-Ascolta su Spreaker: https://www.spreaker.com/show/i-consigli-di-un-pirla
-Ascolta su Castbox: https://castbox.fm/channel/I-Consigli-di-un-Pirla---Pillole-per-Freelance-id3274234?country=it
+                <p class="mt4 mb4">
+                    <h3 class="title mb0 pb0">Vuoi parlare di questa puntata?</h3>
+                    <ul class="list-reset">
+                        <li>Scrivi sul gruppo <a href="{{ $.Site.Params.telegram }}" title="Telegram">Telegram</a></li>
+                    </ul>
+                </p>
 
-I miei contatti: Telegram - Email
-
-Credits: Aces High by Kevin MacLeod
+                <p class="podcast-credits"><small>Credits: <a href="https://incompetech.filmmusic.io/song/3337-aces-high" target="_blank">Aces High by Kevin MacLeod</a></small></p>
             </article>
             <div class="disqus mt4">
                 <div id="disqus_thread"></div>
@@ -59,6 +76,6 @@ Credits: Aces High by Kevin MacLeod
 </div>
 {{ end }}
 {{ define "extra-footer" }}
-    {{ $style := resources.Get "sass/post/single.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    {{ $style := resources.Get "sass/podcast/single.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 {{ end }}

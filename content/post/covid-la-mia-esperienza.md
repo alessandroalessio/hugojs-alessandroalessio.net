@@ -1,5 +1,6 @@
 ---
 title: "Covid: La Nostra Esperienza"
+draft: true
 date: 2021-05-04T08:12:11+02:00
 ---
 
