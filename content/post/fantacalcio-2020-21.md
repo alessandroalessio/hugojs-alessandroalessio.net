@@ -32,7 +32,8 @@ Come **certezze** c'è il fatto che io e i portieri non andiamo affatto d'accord
 
 I miei goal subiti in realtà non sono neanche troppo da considerare in quanto negli scontri diretti con la [capolista e vincitrice](https://www.and.re.it) ho subito 11 goal in due partite.
 
-// Da scrivere finale di coppa
+Peccato per la coppa che mi ha visto andare in finale ma poi dover cedere nuovamente alla Miramonti, nonchè campione in carica.
+Grande double per Andre e la sua squadra, meritatissimo!
 
 ### Considerazioni
 Un ottimo campionato, strutturato sulle fondamenta solide del trio **Immobile-Zapata-Joao Pedro** del quale purtroppo non potrò confermare 2/3 di esso. Ho però rischiato un pò con il mercato in corso per muovermi al fine di avere delle conferme *"allettanti"* per il prossimo anno.
