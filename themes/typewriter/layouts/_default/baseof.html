@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ $.Site.LanguageCode | default "en" }}">
     {{- partial "head.html" . -}}
-    <body data-barba="wrapper">
+    <body id="body-scroll" data-barba="wrapper">
         {{- partial "header.html" . -}}
         <div id="content" data-barba="container">
         {{- block "main" . }}{{- end }}
