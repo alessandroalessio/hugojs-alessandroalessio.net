@@ -4,7 +4,7 @@ title = "Alessandro Alessio"
 theme = "typewriter"
 
 languageCode = "it-it"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "it"
 
 enableEmoji = true
 enableGitInfo = true
