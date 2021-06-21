@@ -45,3 +45,6 @@
 .pointer{
     cursor:pointer;
 }
+
+// Visibility
+.hidden{ overflow: hidden; height: 0px; margin: 0; padding:0; }

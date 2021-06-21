@@ -1,6 +1,6 @@
 baseURL = "https://compassionate-yalow-e93930.netlify.app/"
 # baseURL = "http://www.alessandroalessio.net/"
-title = "Alessandro Alessio"
+title = "Alessandro Alessio - Siti Web e Software Alessandria"
 theme = "typewriter"
 
 languageCode = "it-it"
@@ -12,6 +12,8 @@ enableRobotsTXT = true
 canonifyURLs = true
 
 [params]
+  description = "Sono un programmatore nerd di Alessandria con tante passioni: viaggi, videogames, fantacalcio. Li racchiudo tutti qui."
+  keywords = "programmatore alessandria, siti web alessandria, creazione siti alessandria, fantacalcio alessandria"
   author = "Alessandro Alessio"
   github = "https://github.com/alessandroalessio"
   facebook = "https://www.facebook.com/a.alessio86"

@@ -5,10 +5,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Description }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="description" content="{{if .IsPage}}{{ .Description }}{{ else }}{{ $.Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{if .IsPage}}{{ .Description }}{{ else }}{{ $.Site.Params.keywords }}{{ end }}">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#5755D9">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="canonical" href="{{.Page.RelPermalink}}">
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}
