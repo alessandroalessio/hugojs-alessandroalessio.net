@@ -1,7 +1,7 @@
 ---
 title: "I Consigli di un Pirla Podcast Ep.3 – “Urgente” è soggettivo"
 date: 2021-05-03T19:41:42+02:00
-draft: true
+draft: false
 mp3: "https://www.alessandroalessio.net/wp-content/uploads/2020/08/Consigli_di_un_pirla_EP_3.mp3"
 spotify: "https://open.spotify.com/embed/episode/2MvMYUBFoj7Cg3QWbxSHiP"
 ---

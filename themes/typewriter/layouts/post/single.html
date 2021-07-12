@@ -14,41 +14,43 @@
             <div class="col-xs-12 dida-single-article">{{.Params.thumbdida}}</div>
         </div>
     {{ end }}
-    <div class="row center-xs">
-        <div class="col-sm-8">
-            <div class="back-wrapper"><a href="/post" title="Blog">&larr; Tutti gli articoli</a></div>
-            <h1 id="title" class="title text-center">{{ .Title }}</h1>
-            {{ if .Date }}
-                <div class="date">
-                    {{ .Date.Format "02/02/2006" }}
+    <section class="content-wrapper">
+        <div class="row center-xs">
+            <div class="col-sm-8">
+                <div class="back-wrapper"><a href="/post" title="Blog">&larr; Tutti gli articoli</a></div>
+                <h1 id="title" class="title text-center">{{ .Title }}</h1>
+                {{ if .Date }}
+                    <div class="date">
+                        {{ .Date.Format "02/02/2006" }}
+                    </div>
+                {{ end }}
+                <article id="content" class="post-content mt4">
+                {{ .Content }}
+                </article>
+                <div class="disqus mt4">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://alessandroalessio-net.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 </div>
-            {{ end }}
-            <article id="content" class="post-content mt4">
-            {{ .Content }}
-            </article>
-            <div class="disqus mt4">
-                <div id="disqus_thread"></div>
-                <script>
-                    /**
-                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://alessandroalessio-net.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
         </div>
-    </div>
+    </section>
 </div>
 {{ end }}
 {{ define "extra-footer" }}

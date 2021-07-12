@@ -3,6 +3,7 @@
         <div class="row mt3 pb3">
             <div class="col-xs-12 text-center">
                 <small class="block">&copy; 2021 alessandroalessio.net</span>
+                <small class="block"><a href="https://www.a2area.it" title="Realizzazione siti web Alessandria">Credits</a> / <a href="/privacy/">Privacy Policy</a></small>
                 <small class="block">Sito con <a href="https://gohugo.io/" target="_blank" title="Hugo JS">HugoJS</a> realizzato sperimentando <a href="http://flexboxgrid.com/" target="_blank" title="Flexbox Grid">flexbox.grid</a> &amp; <a href="https://basscss.com/" target="_blank" title="Bass CSS">Basscss</a></small>
             </div>
         </div>
@@ -17,11 +18,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" rel="stylesheet" type="text/css">
 <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <!--script src="https://cdn.jsdelivr.net/npm/@barba/core"></script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <!--script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.1/smooth-scrollbar.min.js" integrity="sha512-UmrYi6FvCoDgKRTzLOvAj/egIrJtoTIQV0u/stO1h5f4DQNcXnhwnY0rel5zduc3CNqO6LfVI8ZaGUKCrLIo7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script-->
 <script src="/js/index.js"></script>

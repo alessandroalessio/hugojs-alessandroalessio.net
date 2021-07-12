@@ -18,7 +18,8 @@ La cosa che reputo davvero positiva è il raggiungimento dei 72 pti/media per gi
 Di negativo c'è la mia ossessione per il detto *"la formazione non titolare non si tocca"* che mi ha fatto perdere almeno una decina di goal di [Simy](https://it.wikipedia.org/wiki/Simeon_Nwankwo) che probabilmente mi avrebbero portato a giocarmela davvero, anche con un calendario non troppo favorevole.
 
 Il mio **11 titolare** è stato di tutto rispetto:
-![Formazione Titolare Atletico Mojito 2020/21](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620719662/alessandro-alessio-net/fantacalcio-2020-21/formazione-fantacalcio_jrgnsq.jpg)
+[![Formazione Titolare Atletico Mojito 2020/21](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620719662/alessandro-alessio-net/fantacalcio-2020-21/formazione-fantacalcio_jrgnsq.jpg)](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620719662/alessandro-alessio-net/fantacalcio-2020-21/formazione-fantacalcio_jrgnsq.jpg)
+
 Considerando che sono stati praticamente tutti acquistati (o confermati) dall'asta iniziale mi reputo soddisfatto. In panchina (a fine campionato) c'erano:
 
 - Reina, Strakosha
@@ -28,7 +29,7 @@ Considerando che sono stati praticamente tutti acquistati (o confermati) dall'as
 
 Come **certezze** c'è il fatto che io e i portieri non andiamo affatto d'accordo. Tra Musso e Reina ho preso valangate di goal. Annoverabile tra le certezze c'è anche Milinkovic-Savic: incredibile.
 
-![Classifica Fantacalcio 2020-21](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620713012/alessandro-alessio-net/fantacalcio-2020-21/classifica-fantacalcio-2020-21_zdgsjw.jpg)
+[![Classifica Fantacalcio 2020-21](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620713012/alessandro-alessio-net/fantacalcio-2020-21/classifica-fantacalcio-2020-21_zdgsjw.jpg)](https://res.cloudinary.com/alessandro-alesiso-net/image/upload/v1620713012/alessandro-alessio-net/fantacalcio-2020-21/classifica-fantacalcio-2020-21_zdgsjw.jpg)
 
 I miei goal subiti in realtà non sono neanche troppo da considerare in quanto negli scontri diretti con la [capolista e vincitrice](https://www.and.re.it) ho subito 11 goal in due partite.
 
